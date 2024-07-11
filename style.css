@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  
+}
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+body {
+  background: url("bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 100px 100px rgba(0, 0, 0, 0.7); 
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 150px 20px;
+  align-items: center;
+}
+.container {
+  
+  color: white;
+  padding: 20px 25px;
+  /* min-width: 60vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:  0 8px 32px 1px rgba(0, 0, 0, 0.37);
+}
+.input-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 1px;
+}
+.input-container input {
+  padding: 5px 10px;
+  width: 20ch;
+  flex-basis: 100%;
+  font-size: 18px;
+  border-radius: 6px;
+  text-align: center;
+  border: 2px solid green;
+}
+.input-container input:active,
+.input-container input:focus {
+  box-shadow: 0px 0px 20px 1px green;
+  outline: none;
+  flex-grow: 0;
+  transform: scale(1.1);
+}
+button {
+  flex-basis: 40%;
+  padding: 8px 1cqh;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  transition: all 0.1s ease-out;
+}
+button:active {
+  transform: scale(1.1);
+  color: black;
+}
+#btn-search {
+  background-color: green;
+}
+#btn-search:active {
+  background-color: lightgreen;
+  box-shadow: 0px 0px 50px 1px green;
+}
+#btn-clear {
+  background-color: red;
+}
+#btn-clear:active {
+  background-color: rgb(249, 96, 96);
+  box-shadow: 0px 0px 50px 1px red;
+}
+.result-container {
+  
+  margin: 20px 0px;
+  font-weight: bold;
+  color: white;
+}
